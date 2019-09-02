@@ -20,12 +20,12 @@ import xlrd
 #
 # The output excel file is saved under the name "ServerInfo.xls" and is saved wherever this python script is saved/run.
 
-TaniumServerFilePath = "/Users/kamila.wickramarachchi/Desktop/DamionServerInformation/ListOfAllTaniumServers.csv"
-SvrPatchServersFilePath = "/Users/kamila.wickramarachchi/Desktop/DamionServerInformation/SvrPatchServers.csv"
-CloudServicesServersFilePath = "/Users/kamila.wickramarachchi/Desktop/DamionServerInformation/CloudServicesServers.csv"
-TaniumServerColumnName = "Computer Name"
-SvrPatchServersColumnName = "name"
-CloudServicesServersColumnName = "Name"
+TaniumServerFilePath = ""
+SvrPatchServersFilePath = ""
+CloudServicesServersFilePath = ""
+TaniumServerColumnName = ""
+SvrPatchServersColumnName = ""
+CloudServicesServersColumnName = ""
 
 # The below function takes in server information from tanium, the svrpatch security group, and cloud services and
 # cross checks the servers and then inputs them into an excel file.

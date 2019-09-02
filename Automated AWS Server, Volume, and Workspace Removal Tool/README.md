@@ -2,7 +2,7 @@
 
 # Amazon Web Services Server, Volume, and Workspace Removal Tool
 
-There are three scripts in this folder
+There are three scripts in this folder.
 
 "WorkSpaceInfoCollectorScript.py" collects data on all AWS Workspaces that haven't been accessed in the past 90 days (this value can be changed).
 

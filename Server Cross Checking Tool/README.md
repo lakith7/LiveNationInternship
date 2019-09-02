@@ -1,11 +1,8 @@
-:-------------------------:|:-------------------------:|:-------------------------:
-![](https://upload.wikimedia.org/wikipedia/commons/1/1d/AmazonWebservices_Logo.svg)  |  ![](https://imgix.datadoghq.com/img/about/presskit/logo-h/logo_horizontal_white.png)  |  ![](https://www.tanium.com/uploads/Tanium-Logo-FullColor-Positive.jpg)
-
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/AmazonWebservices_Logo.svg" width="400" height="200">
-<img src="https://imgix.datadoghq.com/img/about/presskit/logo-h/logo_horizontal_white.png" width="400" height="200">
-<img src="https://www.tanium.com/uploads/Tanium-Logo-FullColor-Positive.jpg" width="400" height="200">
-
+<p float="left">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/AmazonWebservices_Logo.svg" width="250" />
+  <img src="https://imgix.datadoghq.com/img/about/presskit/logo-h/logo_horizontal_white.png" width="250" /> 
+  <img src="https://www.tanium.com/uploads/Tanium-Logo-FullColor-Positive.jpg" width="250" />
+</p>
 
 # Amazon Web Services Server, Volume, and Workspace Removal Tool
 

@@ -7,3 +7,8 @@ Each of my big projects are separated into their own folders and each folder has
 ## Acknowledgments
 
 * Thank you very much to Byron Brummer for helping me write my scripts! I truly would not have been able to get these projects to work without him!
+
+## Author
+
+Kamila Wickramarachchi
+

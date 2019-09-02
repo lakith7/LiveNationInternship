@@ -1,4 +1,10 @@
-# AWS Server Tagging Tool
+<img src="https://assets.pcmag.com/media/images/514204-amazon-web-services-logo.jpg?width=333&height=245" width="333" height="245">
+
+# Amazon Web Services Server Tagging Tool
+
+This script takes an excel file that contains AWS Server tagging information and updates server tags in the AWS console. This script is meant to be run from the command line, and functionality has been added to make command line access as easy as possible. As of 9/2/19, this script has been run on thousands of servers at one time and has fully run within a minute.
+
+# Inputs
 
 This script takes an input of an excel file full of tagging information for AWS servers. This excel file should simply have column named "Instance ID", which is the ID of the server. Then, there should be multiple other columns with the column name being the tag name, and the column value being the tag value.
 
@@ -8,87 +14,22 @@ The three inputs for this script is as follows: filePath, sheetName, and listOfW
 * sheetName is the name of the sheet you want to use within the excel file. 
 * listOfWantedCategories is a list of all categories from the excel file that you want to have imported in as an AWS server tag. This functionality enables the user to provide a general excel file of servers and tag attributes and only update some of those tags.
    
+This script technically has no output. Instead, as it runs, it updates the user as to whether a tag was updated for a specific server or whether it failed. Once it has run, all the server tags should be updated.
 
-## Getting Started
+## Packages Used
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The following packages were used and should be imported before running the script:
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* pandas
+* boto3
+* os
+* xlrd
+* sys
+* time
+* argparse
+* jmespath
+* botocore
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Thank you to Byron Brummer for helping me refine my code and add command line functionality.

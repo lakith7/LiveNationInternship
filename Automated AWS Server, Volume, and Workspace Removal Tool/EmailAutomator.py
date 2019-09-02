@@ -29,10 +29,10 @@ import pandas as pd
 # WorkSpaceInfoCollectorScript.py
 
 # FilePath for the output of the WorkSpaceInfoCollectorScript.py
-workspaceScriptFilePath = "/Users/kamila.wickramarachchi/Desktop/FinalResult.xls"
+workspaceScriptFilePath = ""
 
 # FilePath for the output of the active directory.
-adOutputFilePath = "/Users/kamila.wickramarachchi/Desktop/UserInfo.csv"
+adOutputFilePath = ""
 
 workspaceScriptInformation = pd.read_excel(workspaceScriptFilePath, sheet_name = "")
 

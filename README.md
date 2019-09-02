@@ -1,125 +1,87 @@
-calico/node
+# Project Title
 
+One Paragraph of project description goes here
 
-This repository contains the source for the calico/node container.
+## Getting Started
 
-Get Started Using Calico
-For users who want to learn more about the project or get started with Calico, see the documentation on docs.projectcalico.org.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Get Started Developing Calico
-Contributions to this code are welcome! Before starting, make sure you've read the Calico contributor guide.
+### Prerequisites
 
-Dependencies
-The entire build can be run within a container, which means the only dependencies you'll need are a functioning Docker installation.
+What things you need to install the software and how to install them
 
-Building
-The code in this repository can be built and tested using the Makefile.
+```
+Give examples
+```
 
-make calico/node will produce the calico/node docker image.
-For more information, see make help.
+### Installing
 
-How can I run tests?
-Tests for this repo are divided into the following categories:
+A step by step series of examples that tell you how to get a development env running
 
-fv: Package scoped tests
-st: System integration tests
-k8s-test: Kubernetes integration tests
-Assuming you have installed the necessary dependencies (see below for details), you can run any of the above categories using:
+Say what the step will be
 
-make <target>
-Where target is one of fv, st, or k8s-test. You can also use test, which aggregates fv and st.
+```
+Give the example
+```
 
-Dependencies for running tests
-If you want to be able to run tests locally, you will need to install:
+And repeat
 
-GNU make
-For st system integration tests, node uses:
+```
+until finished
+```
 
-Python (>= 2.7 ???)
-Nose
-For fv packaged scoped tests, node uses:
+End with an example of getting some data out of the system or using it for a little demo
 
-Golang (>=1.7)
-Ginkgo
-You will also need to install Ginkgo explicitly:
+## Running the tests
 
-go get -u github.com/Masterminds/glide
-go get -u github.com/onsi/ginkgo/ginkgo
-For k8s-test Kubernetes tests, you will need to have kubectl setup on your machine. Go here for instructions on setting up kubectl for your environment.
+Explain how to run the automated tests for this system
 
-How can I run a subset of the tests?
-If you want to run tests for a specific package for more iterative development, you can filter down into a subset of tests using the following parameters:
+### Break down into end to end tests
 
-For filtering st tests, use ST_TO_RUN
-For filtering k8s-test tests, use K8ST_TO_RUN
-For example, the following only runs tests within the bgp subfolder of the st category:
+Explain what these tests test and why
 
-make st ST_TO_RUN="tests/st/bgp/"
-To only run tests from a single file (e.g. test_bgp.py), use the following:
+```
+Give an example
+```
 
-make st ST_TO_RUN="tests/st/bgp/test_bgp.py"
-To only run a single test within a test file use the below syntax:
+### And coding style tests
 
-make st ST_TO_RUN="tests/st/bgp/test_bgp.py:TestReadiness.test_readiness_multihost"
-The above examples should apply in the same fashion if you are using K8ST_TO_RUN instead for the k8s-test category.
+Explain what these tests test and why
 
-How do I debug tests?
-There are a number of possible avenues you can use to debug failing tests.
+```
+Give an example
+```
 
-Review the diagnostic logs after the tests finish running
-These only show for failed tests
-Be warned the logs are quite verbose
-Use the parameter DEBUG_FAILURES with the Makefile
-make st DEBUG_FAILURES=true
-This only applies to st tests
-A subset of the st are wrapped by debug_failures(fn) function found in ./tests/st/utils/utils.py
-You should be able to wrap whatever test you want
-Uses Python's pdb.set_trace() library function, allows you to halt executing and step into the containers involved in the test for debugging
-Use manual breakpoints
-A more primitive approach is just to add your own breakpoints (using something like time.sleep(x))
-You should know where to add these after reviewing the diagnostic logs for failed tests (by looking at the stacktraces)
-Linux Dependencies
-Below is a listing of userspace tools packaged into the node container. The list is not exhaustive, but highlights some of the key dependencies required for node to operate correctly.
+## Deployment
 
-/user/sbin/arp
-Manipulate the system ARP cache
-Package: net-tools
-/user/sbin/conntrack
-Netfilter connection tracking
-Package: conntrack
-/bin/ip
-Show / manipulate routing, devices, policy routing and tunnels
-Package: iproute2
-/usr/sbin/iptables
-Admin tool for IPv4 packet filtering and NAT
-Note, we're using the legacy version iptables-legacy → xtables-legacy-multi (divergence introduced in iptables v1.8.2)
-Package: iptables
-/usr/sbin/iptables-restore
-Note, we're using the legacy version iptables-legacy-restore → xtables-legacy-multi (divergence introduced in iptables v1.8.2)
-Package: iptables
-/usr/sbin/iptables-save
-Note, we're using the legacy version iptables-legacy-save → xtables-legacy-multi (divergence introduced in iptables v1.8.2)
-Package: iptables
-/usr/sbin/ip6tables
-Admin tool for IPv6 packet filtering and NAT
-Note, we're using the legacy version ip6tables-legacy → xtables-legacy-multi (divergence introduced in iptables v1.8.2)
-Package: iptables
-/usr/sbin/ip6tables-restore
-Note, we using the legacy version ip6tables-legacy-restore → xtables-legacy-multi (divergence introduced in iptables v1.8.2)
-Package: iptables
-/usr/sbin/ip6tables-save
-Note, we using the legacy version ip6tables-legacy-save → xtables-legacy-multi (divergence introduced in iptables v1.8.2)
-Package: iptables
-/bin/ps
-Snapshot of the current processes
-Package: procps
-/bin/kmod
-Manage Linux Kernel modules
-soft link for depmod, insmod, lsmod, modinfo, modprobe, rmmo
-Package: kmod
-/sbin/runit
-Init scheme with service supervision
-Package: runit
-/usr/sbin/runsvchdir
-Starts and monitors a collection of runsv processes
-Package: runit
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc

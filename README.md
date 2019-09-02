@@ -1,4 +1,4 @@
-# A repository of all the scripts I wrote while at Live Nation Entertainment
+# This repo contains all the scripts I as an intern at Live Nation Entertainment.
 
 Each of my big projects are separated into their own folders and each folder has a ReadMe detailing how the scripts work and their inputs and outputs.
 
@@ -82,6 +82,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Thank you very much to Byron Brummer for helping me write my scripts! I truly would not have been able to get these projects to work without him!

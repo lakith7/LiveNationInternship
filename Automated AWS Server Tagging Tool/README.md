@@ -1,4 +1,4 @@
-<img src="https://assets.pcmag.com/media/images/514204-amazon-web-services-logo.jpg?width=333&height=245" width="333" height="245">
+<img src="https://assets.pcmag.com/media/images/514204-amazon-web-services-logo.jpg?width=333&height=200" width="333" height="245">
 
 # Amazon Web Services Server Tagging Tool
 

@@ -1,4 +1,3 @@
-Solarized dark             |  Solarized Ocean          | Solarized
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://upload.wikimedia.org/wikipedia/commons/1/1d/AmazonWebservices_Logo.svg)  |  ![](https://imgix.datadoghq.com/img/about/presskit/logo-h/logo_horizontal_white.png)  |  ![](https://www.tanium.com/uploads/Tanium-Logo-FullColor-Positive.jpg)
 

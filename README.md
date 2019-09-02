@@ -1,6 +1,6 @@
-# Project Title
+# A repository of all the scripts I wrote while at Live Nation Entertainment
 
-One Paragraph of project description goes here
+Each of my big projects are separated into their own folders and each folder has a ReadMe detailing how the scripts work and their inputs and outputs.
 
 ## Getting Started
 

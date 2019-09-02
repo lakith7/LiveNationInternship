@@ -35,3 +35,7 @@ The following packages were used and should be imported before running the scrip
 ## Acknowledgments
 
 * Thank you to Byron Brummer for helping me refine my code and add command line functionality.
+
+# Author
+
+Kamila Wickramarachchi

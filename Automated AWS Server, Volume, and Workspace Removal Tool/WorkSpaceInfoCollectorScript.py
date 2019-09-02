@@ -11,9 +11,9 @@ import pytz
 #Change ONLY the below variables, role and region. Look below for the specific wording used for each role. Keep both
 #variables within quotation marks.If the role cannot be found below, check your aws config file for the proper wording.
 #This file can usually be found for mac in /Users/[your_profile_name]/.aws
-#"cs-prod" "cs-test" "fintech" "venuetech" "rome" "it-support" "data-science" "data-bricks"
-role = "data-science"
-region = "us-east-1"
+
+role = ""
+region = ""
 time = 90
 
 #The below information sets up the aws account information before running any aws code.

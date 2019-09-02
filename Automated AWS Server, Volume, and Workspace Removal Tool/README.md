@@ -12,17 +12,40 @@ There are three scripts in this folder
 
 # Inputs
 
-This script takes an input of an excel file full of tagging information for AWS servers. This excel file should simply have column named "Instance ID", which is the ID of the server. Then, there should be multiple other columns with the column name being the tag name, and the column value being the tag value.
+WorkSpaceInfoCollectorScript.py:
 
-The three inputs for this script is as follows: filePath, sheetName, and listOfWantedCategories. 
+* role: This is simply a string that is the exact name of the AWS profile you want this script to run in.
+* region: This is a string that is the exact name of the AWS region you want this script to run in.
+* time: This is an integer that is used to determine which workspaces should be retrieved. If the value is 90 (which the default), then the script pulls all workspaces that haven't been accessed in the last 90 days.
 
-* filePath is the file path to the excel file. 
-* sheetName is the name of the sheet you want to use within the excel file. 
-* listOfWantedCategories is a list of all categories from the excel file that you want to have imported in as an AWS server tag. This functionality enables the user to provide a general excel file of servers and tag attributes and only update some of those tags.
+PullServer:VolumeInfo.py:
+
+* Server: A boolean input. If True, the script looks for stopped AWS servers and outputs their metadata. If False, the script looks for unattached AWS volumes and outputs their metadata.
+* profiles: A list of strings that contains all the AWS profiles that the user would like to loop through.
+* regions: A list of strings that contains all the AWS regions that the user would like to loop through.
+
+EmailAutomator.py:
+
+* workspaceScriptFilePath: A string that is the file path of the output of the WorkSpaceInfoCollectorScript.py
+* adOutputFilePath: A string that is the file path for the output from the active directory script (was not allowed to post this script on my github). A sample active directory script is placed in the comments at the top of EmailAutomator.py
+* msg: A string that contains the email body message.
+
+Note: EmailAutomator.py was optimized for the WorkSpaceInfoCollector.py script but was able to be used for the PullServer:VolumeInfo.py script with a few minor changes.
   
 # Outputs  
    
-This script technically has no output. Instead, as it runs, it updates the user as to whether a tag was updated for a specific server or whether it failed. Once it has run, all the server tags should be updated.
+WorkSpaceInfoCollectorScript.py:
+
+* Outputs an excel file that contains information about all unused AWS workspaces.
+* Outputs a list of strings that are each a username. This output was then used in an active directory script to pull email addresses. I was not allowed to publish the active directory script on my github.
+
+PullServer:VolumeInfo.py:
+
+* Outputs an excel file that contains information about all the unattached volumes or stopped servers.
+
+EmailAutomator.py:
+
+* Technically this script has no output. However, as the script attempts to send each email, the user is notified whether the email was succesfully sent or not.
 
 ## Packages Used
 
@@ -51,7 +74,8 @@ EmailAutomator.py:
 
 ## Acknowledgments
 
-* Thank you to Byron Brummer for helping me refine my code and add command line functionality.
+* Thank you to Byron Brummer for helping me refine my code.
+* Thank you to Tim Cordell for introducing me to the SMTP protocols.
 
 ## Author
 

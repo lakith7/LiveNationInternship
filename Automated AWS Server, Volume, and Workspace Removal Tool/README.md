@@ -2,7 +2,13 @@
 
 # Amazon Web Services Server, Volume, and Workspace Removal Tool
 
-There are three scripts in this folder. Both do roughly the same thing. The script titled "WorkSpaceInfoCollectorScript.py" 
+There are three scripts in this folder
+
+"WorkSpaceInfoCollectorScript.py" collects data on all AWS Workspaces that haven't been accessed in the past 90 days (this value can be changed).
+
+"PullServer:VolumeInfo.py" collects data on all AWS servers that are stopped and all AWS volumes that are unattached.
+
+"EmailAutomator.py" takes the email addresses of the owners of a specified AWS workspace, server, or volume and sends them an email asking whether the AWS workspace, server, or volume can be deleted. The information the script inputs is the same info that is outputed from the other two scripts.
 
 # Inputs
 
@@ -20,17 +26,28 @@ This script technically has no output. Instead, as it runs, it updates the user 
 
 ## Packages Used
 
-The following packages were used and should be imported before running the script:
+The following packages were used and should be imported before running the specified script:
 
-* pandas
+WorkSpaceInfoCollectorScript.py:
+
 * boto3
+* pandas
+* datetime
+* xlwt
+* timedelta
 * os
-* xlrd
-* sys
-* time
-* argparse
-* jmespath
-* botocore
+* pytz
+
+PullServer:VolumeInfo.py:
+
+* boto3
+* xlwt
+* pandas
+
+EmailAutomator.py:
+
+* smtplib
+* pandas
 
 ## Acknowledgments
 

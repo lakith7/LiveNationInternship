@@ -1,6 +1,8 @@
+<img src="https://s.pngix.com/pngfile/s/90-900069_live-nation-logo-png-picture-transparent-stock-live.png" width="100" height="100">
+
 # This repo contains all the scripts I wrote as an intern at Live Nation Entertainment
 
-Each of my big projects are separated into their own folders and each folder has a ReadMe that explain how the script works, what inputs the script takes, and the output of the script.
+Each of my big projects are separated into their own folders and each folder has a ReadMe that explain how the scripts work, what inputs the scripts take, and the output of the scripts.
 
 ## Acknowledgments
 

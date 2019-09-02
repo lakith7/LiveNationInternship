@@ -23,9 +23,9 @@ import pandas as pd
 
 Server = False
 
-profiles = ['cs-test', 'cs-prod', 'fintech', 'venuetech', 'rome', 'infosec-na', 'infosec-sandbox', 'artist-service', 'on-tour-sites', 'hobe', 'it-support', 'network-users', 'data-science', 'data-bricks', 'lninfra-prod', 'microflex']
+profiles = []
 
-regions = ['us-east-1', 'us-west-2']
+regions = []
 
 # Function below pulls the information for all instances in a specified profile and region.
 

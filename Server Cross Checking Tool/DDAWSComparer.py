@@ -40,8 +40,8 @@ import csv
 # prefilled values for APIKey, APPKey, filePath, AnnMarieExcelSheetFilePath, and ADServerInfoFilePath.
 # Feel free to change the values in regions/profiles or leave them alone.
 
-APIKey = "njsnafgjldsfl"
-APPKey = "afsdfdsafadsfdsaf"
+APIKey = ""
+APPKey = ""
 filePath = "/Users/kamila.wickramarachchi/Desktop/Scripts/DataDogAWS/ServerInfo.xls"
 AnnMarieExcelSheetFilePath = "/Users/kamila.wickramarachchi/Desktop/Scripts/DataDogAWS/CSinventory(Updated).xlsm"
 ADServerInfoFilePath = "/Users/kamila.wickramarachchi/Desktop/Scripts/DataDogAWS/ServerNames.csv"

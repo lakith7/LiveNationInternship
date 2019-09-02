@@ -40,4 +40,4 @@ The following packages were used and should be imported before running the scrip
 
 Kamila Wickramarachchi 
 
-[My Github Repositories](https://github.com/lakith7)
+[My Github Profile](https://github.com/lakith7)

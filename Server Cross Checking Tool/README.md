@@ -1,6 +1,6 @@
 <p align="middle">
   <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/AmazonWebservices_Logo.svg" width="250" />
-  <img src="https://imgix.datadoghq.com/img/about/presskit/logo-h/logo_horizontal_white.png" width="250" /> 
+  <img src="https://jumpcloud.com/wp-content/uploads/2017/12/jc-sso-datadog.png" width="250" /> 
   <img src="https://www.tanium.com/uploads/Tanium-Logo-FullColor-Positive.jpg" width="250" />
 </p>
 

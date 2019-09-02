@@ -13,6 +13,8 @@ The three inputs for this script is as follows: filePath, sheetName, and listOfW
 * filePath is the file path to the excel file. 
 * sheetName is the name of the sheet you want to use within the excel file. 
 * listOfWantedCategories is a list of all categories from the excel file that you want to have imported in as an AWS server tag. This functionality enables the user to provide a general excel file of servers and tag attributes and only update some of those tags.
+  
+# Outputs  
    
 This script technically has no output. Instead, as it runs, it updates the user as to whether a tag was updated for a specific server or whether it failed. Once it has run, all the server tags should be updated.
 

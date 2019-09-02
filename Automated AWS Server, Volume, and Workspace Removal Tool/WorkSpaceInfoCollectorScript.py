@@ -14,6 +14,7 @@ import pytz
 #"cs-prod" "cs-test" "fintech" "venuetech" "rome" "it-support" "data-science" "data-bricks"
 role = "data-science"
 region = "us-east-1"
+time = 90
 
 #The below information sets up the aws account information before running any aws code.
 os.environ['AWS_PROFILE'] = role
@@ -66,7 +67,7 @@ for eachWorkspace in listOfWorkSpaces:
     workSpaceInformation = client.describe_workspaces_connection_status(WorkspaceIds=[eachWorkspace])
     workSpaceInfoDict = client.describe_workspaces(WorkspaceIds=[eachWorkspace])
     dateTime = workSpaceInformation.get("WorkspacesConnectionStatus")[0].get("LastKnownUserConnectionTimestamp")
-    if dateTime == None or dateTimeNow - dateTime > datetime.timedelta(days=90):
+    if dateTime == None or dateTimeNow - dateTime > datetime.timedelta(days=time):
         listOfOldWorkspaces.append(eachWorkspace)
         dictOfWorkspacesAndTime[eachWorkspace] = dateTime
 

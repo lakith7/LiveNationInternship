@@ -2,7 +2,7 @@
 
 # Amazon Web Services Server Tagging Tool
 
-This script takes an excel file that contains AWS Server tagging information and updates server tags in the AWS console. This script is meant to be run from the command line, and functionality has been added to make command line access as easy as possible. As of 9/2/19, this script has been run on thousands of servers at one time and has fully run within a minute.
+This script takes an excel file that contains AWS Server tagging information and updates server tags in the AWS console. This script is meant to be run from the command line, and functionality has been added to make command line access as easy as possible. As of 9/2/19, this script has been run on thousands of servers at one time and has fully run within a matter of  minutes.
 
 # Inputs
 

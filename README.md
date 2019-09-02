@@ -2,7 +2,7 @@
 
 # This repo contains all the scripts I wrote as an intern at Live Nation Entertainment
 
-Each of my big projects are separated into their own folders and each folder has a ReadMe that explain how the scripts work, what inputs the scripts take, and the output of the scripts.
+Each of my big projects are separated into their own folders and each folder has a ReadMe that explain what the scripts do, what inputs the scripts take, and what the scripts output.
 
 ## Acknowledgments
 

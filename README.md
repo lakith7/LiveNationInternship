@@ -1,4 +1,4 @@
-# This repo contains all the scripts I as an intern at Live Nation Entertainment.
+# This repo contains all the scripts I wrote as an intern at Live Nation Entertainment
 
 Each of my big projects are separated into their own folders and each folder has a ReadMe detailing how the scripts work and their inputs and outputs.
 

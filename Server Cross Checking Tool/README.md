@@ -1,4 +1,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/AmazonWebservices_Logo.svg" width="400" height="200">
+<img src="https://imgix.datadoghq.com/img/about/presskit/logo-h/logo_horizontal_white.png" width="400" height="200">
+<img src="https://www.tanium.com/uploads/Tanium-Logo-FullColor-Positive.jpg" width="400" height="200">
+
 
 # Amazon Web Services Server, Volume, and Workspace Removal Tool
 

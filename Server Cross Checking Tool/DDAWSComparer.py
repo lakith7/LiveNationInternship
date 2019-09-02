@@ -20,7 +20,7 @@ import csv
 #
 # Also replace the filePath variable with the file path you want the final output data to be saved to.
 #
-# Replace the AnnMarieExcelSheetFilePath with the file path to the CS Inventory excel spreadsheet.
+# Replace the CSInventoryFilePath with the file path to the CS Inventory excel spreadsheet.
 #
 # Replace the ADServerInfoFilePath with the file path to the Active Directory csv file. MAKE SURE to delete the
 # topmost row of the Active Directory server file before inputting the file path, as that row has nonessential
@@ -37,13 +37,13 @@ import csv
 # This code was last updated on 7/29/2019.
 
 # Fill in the variables below. Many of them have prefilled values to show the format for the variables. Do NOT use the
-# prefilled values for APIKey, APPKey, filePath, AnnMarieExcelSheetFilePath, and ADServerInfoFilePath.
+# prefilled values for APIKey, APPKey, filePath, CSInventoryFilePath, and ADServerInfoFilePath.
 # Feel free to change the values in regions/profiles or leave them alone.
 
 APIKey = ""
 APPKey = ""
 filePath = "/Users/kamila.wickramarachchi/Desktop/Scripts/DataDogAWS/ServerInfo.xls"
-AnnMarieExcelSheetFilePath = "/Users/kamila.wickramarachchi/Desktop/Scripts/DataDogAWS/CSinventory(Updated).xlsm"
+CSInventoryFilePath = "/Users/kamila.wickramarachchi/Desktop/Scripts/DataDogAWS/CSinventory(Updated).xlsm"
 ADServerInfoFilePath = "/Users/kamila.wickramarachchi/Desktop/Scripts/DataDogAWS/ServerNames.csv"
 
 regions = ['eu-north-1', 'ap-south-1', 'eu-west-3', 'eu-west-2', 'eu-west-1', 'ap-northeast-2', 'ap-northeast-1', 'sa-east-1', 'ca-central-1', 'ap-southeast-1', 'ap-southeast-2', 'eu-central-1', 'us-east-1', 'us-east-2', 'us-west-1', 'us-west-2']
@@ -68,7 +68,7 @@ def AWSServersandMetadata(profile, region):
     return listOfAllInstancesInfo
 
 # This method combines the AWS Server information and the DD Server information and generates an excel sheet.
-def ExcelFiller(listOfInstanceInfo, infra_content, hostList, profile, region, fileName, AnnMarieExcelSheetFilePath,
+def ExcelFiller(listOfInstanceInfo, infra_content, hostList, profile, region, fileName, CSInventoryFilePath,
                 ADServerInfoFilePath, masterInfra_Content, masterHostList):
 
     # Exits the method and returns false if there is no AWS information for the specified profile and region.
@@ -105,7 +105,7 @@ def ExcelFiller(listOfInstanceInfo, infra_content, hostList, profile, region, fi
 
     listInstanceID = []
 
-    file = pd.read_excel(AnnMarieExcelSheetFilePath, sheet_name="AWS")
+    file = pd.read_excel(CSInventoryFilePath, sheet_name="AWS")
 
     # Creates a list that contains all the Instance IDs from the AWS input information.
     for i in file.index:
@@ -355,7 +355,7 @@ for eachProfile in profiles:
             fileName = eachProfile + "-" + eachRegion
             worked, masterInfra_Content, masterHostList = ExcelFiller(AWSServersandMetadata(eachProfile, eachRegion),
                                                                       infra_content, hostList, eachProfile, eachRegion,
-                                                                      fileName + ".xls", AnnMarieExcelSheetFilePath,
+                                                                      fileName + ".xls", CSInventoryFilePath,
                                                                       ADServerInfoFilePath, masterInfra_Content,
                                                                       masterHostList)
             if worked:

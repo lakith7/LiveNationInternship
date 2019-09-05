@@ -15,7 +15,7 @@ import pandas as pd
 # The active directory csv file can be retrieved by running the following script for each profile and region
 # in the active directory (powershell):
 #
-#  $List = @('Rob.Caudillo', 'vivian.wang', 'Venu.Malyala', 'Christine.Chu', 'Matt.Jensen', 'Stacy.Price', 'curtis.li', 'Kushal.Gupta', 'kaushlendra.bais', 'jquiring')
+#  $List = @('random.username1', 'random.username2', 'random.username3', 'random.username4', 'random.username5')
 #  $Users = @()
 #  $Incorrect = @()
 #  foreach ($Item in $List) {

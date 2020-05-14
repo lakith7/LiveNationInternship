@@ -65,7 +65,7 @@ while (index < len(listOfUsernames)):
         sender = 'kamilawickramarachchi@livenation.com'
         receivers = [listOfEmail[index]]
 
-        message = """From: Cloud Services Operations <cloudservicesoperations@livenation.com>
+        message = """From: Cloud Services Operations <_________@livenation.com>
 To: {0} <{1}>
 Subject: AWS Workspace
 
@@ -74,9 +74,9 @@ Hello {2},
 I’m reaching out to you about your AWS workspace {3}. 
 Since a monthly charge is incurred, we would like to know if this workspace is still being utilized.
 
-Please complete this quick Microsoft form to retain or delete your AWS Workspace: https://tinyurl.com/yxggaj6m
+Please complete this quick Microsoft form to retain or delete your AWS Workspace: _______
 
-If you have any questions, please send an email to cloudserviceshelp@livenation.com. Please do not reply to this email.
+If you have any questions, please send an email to ______@livenation.com. Please do not reply to this email.
 
 Thank you,
 
@@ -97,7 +97,7 @@ Live Nation Cloud Services
         sender = 'kamilawickramarachchi@livenation.com'
         receivers = [listOfEmail[index]]
 
-        message = """From: Cloud Services Operations <cloudservicesoperations@livenation.com>
+        message = """From: Cloud Services Operations <_____@livenation.com>
 To: {0} <{1}>
 Subject: AWS Workspace
 
@@ -106,9 +106,9 @@ Hello {2},
 According to our records the last time you accessed your AWS Workspace {3} was on {4}. 
 Since a monthly charge is incurred, we would like to know if this workspace is still being utilized.
 
-Please complete this quick Microsoft form to retain or delete your AWS Workspace: https://tinyurl.com/yxggaj6m
+Please complete this quick Microsoft form to retain or delete your AWS Workspace: ________
 
-If you have any questions, please send an email to cloudserviceshelp@livenation.com. Please do not reply to this email.
+If you have any questions, please send an email to _____@livenation.com. Please do not reply to this email.
 
 Thank you,
 
